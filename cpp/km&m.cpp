@@ -30,6 +30,7 @@ int main()
 	dis A,B,Ans;
 	A.setval();
 	B.setval();
+	c.setval();
 	Ans=A+B;
 	Ans.display();
 	return 0;
