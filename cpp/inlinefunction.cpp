@@ -1,6 +1,9 @@
 #include<iostream>
 using namespace std;
-inline int sum(int ,int);
+inline int sum(int x ,int y)
+{
+	return x+y;
+}
 int main()
 {
 	int a,b,s;
@@ -10,7 +13,7 @@ int main()
 	cout<<"The sum is "<<s;
 	return 0;
 }
-inline int sum(int x,int y)
-{
-	return x+y;
-}
+//inline int sum(int x,int y)
+//{
+//	return x+y;
+//}
