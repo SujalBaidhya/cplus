@@ -2,15 +2,16 @@
 using namespace std;
 class con
 {
-	private:
-		string var;
 	public:
-		void getstr()
-		{
-			fflush(stdin);
-			cout<<"Enter string:";
-			getline(cin,var);
-		}
+		string var;
+	
+//		void getstr()
+//		{
+////			fflush(stdin);
+////			cout<<"Enter string:";
+////			getline(cin,var);
+//	
+//		}
 		void display()
 		{
 			cout<<var;
@@ -25,8 +26,8 @@ class con
 int main()
 {
 	con first,second,ans;
-	first.getstr();
-	second.getstr();
+	first.var="H""e""l""l""o";
+	second.var="W""o""r""l""d";
 	ans=first+second;
 	cout<<"String concatenated is ";
 	ans.display();

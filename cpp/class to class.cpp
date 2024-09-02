@@ -20,7 +20,7 @@ class Dis2
 {
 	int m;
 	public:
-		void operator=(Dis obj1)
+		void operator=(Dis<T> &obj1)
 		{
 			m=obj1.conv();
 		}
