@@ -26,11 +26,11 @@ class BIT:public Kist
 		{
 			b=j;
 			cout<<b<<" Child Constructor"<<endl;
-		}
-		BIT(BIT &a):Kist(987)
+	}
+		BIT(BIT &c):Kist(c)
 		{
-			b=a.b;
-			cout<<b <<"Child Copy COnstructor";
+			b=c.b;
+			cout<<b <<"Child Copy COnstructor"<<endl;
 		}
 		
 

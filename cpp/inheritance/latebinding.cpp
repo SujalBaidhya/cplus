@@ -5,7 +5,7 @@ using namespace std;
 class Parent 
 {
     public: 
- 	 void print() 
+ 	virtual void print() 
     { 
         cout << "Parent Class" << endl; 
     } 
@@ -16,6 +16,7 @@ class Child : public Parent
 {
     public:
     // print redeclared in child class
+    //if virtual class is only declared in derived class then late binding wont work since base class wont have knowledge of virtual class
    void print()
     {  
         cout << "Child Class" << endl; 
@@ -24,7 +25,7 @@ class Child : public Parent
 int main() 
 { 
 	Parent *parent ;
-	Child obj;//not used virtual function so output will always be parent class
+	Child obj;
 	parent = &obj;
   // catch of the program is here 
 // also as we are dealing with pointers instead of . we need to use -> 

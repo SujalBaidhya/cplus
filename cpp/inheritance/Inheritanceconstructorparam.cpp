@@ -22,9 +22,9 @@ class BIT:public Kist
 {
 	public:
 		int b;
-		BIT(int j):Kist(j)
+		BIT(int j)
 		{
-		//	b=j;
+			b=j;
 			cout<<" Child Constructor"<<endl;
 		}
 		~BIT()
